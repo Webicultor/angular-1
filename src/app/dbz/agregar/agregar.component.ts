@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interfaces';
 import { PersonajesComponent } from '../personajes/personajes.component';
 
 @Component({
   selector: 'app-agregar',
-  templateUrl: './agregar.component.html',
-  styleUrls: ['./agregar.component.css']
+  templateUrl: './agregar.component.html'
 })
 export class AgregarComponent {
-
+  @Input('nuevo') personajes: Personaje[] = [];
   nuevo: Personaje = {
     nombre: '',
     poder: 0

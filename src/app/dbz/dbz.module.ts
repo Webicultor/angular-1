@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -20,4 +20,7 @@ import { AgregarComponent } from './agregar/agregar.component';
     FormsModule
   ]
 })
-export class DbzModule { }
+export class DbzModule {
+  
+  @Input('nuevo') personajes: Personaje[] = [];
+}

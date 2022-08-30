@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interfaces';
 
 @Component({
@@ -6,8 +6,8 @@ import { Personaje } from '../interfaces/dbz.interfaces';
   templateUrl: './main-page.component.html'
 })
 export class MainPageComponent {
-
-  personajes: Personaje[] = [
+  @Input('nuevo') personajes: Personaje[] = [];
+  /* personajes: Personaje[] = [
     {
       nombre: "Goku",
       poder: 15000
@@ -16,6 +16,6 @@ export class MainPageComponent {
       nombre: "Vegeta",
       poder: 8500
     }
-  ]
+  ] */
 
 }
