@@ -6,8 +6,8 @@ import { Personaje } from '../interfaces/dbz.interfaces';
   templateUrl: './main-page.component.html'
 })
 export class MainPageComponent {
-  @Input('nuevo') personajes: Personaje[] = [];
-  /* personajes: Personaje[] = [
+  
+  personajes: Personaje[] = [
     {
       nombre: "Goku",
       poder: 15000
@@ -16,6 +16,11 @@ export class MainPageComponent {
       nombre: "Vegeta",
       poder: 8500
     }
-  ] */
+  ];
+
+  nuevo: Personaje = {
+    nombre: 'Follet Tortuga',
+    poder: 12000
+  }
 
 }

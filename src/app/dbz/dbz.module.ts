@@ -22,5 +22,4 @@ import { AgregarComponent } from './agregar/agregar.component';
 })
 export class DbzModule {
   
-  @Input('nuevo') personajes: Personaje[] = [];
 }
