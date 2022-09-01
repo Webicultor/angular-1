@@ -7,9 +7,9 @@ import { PersonajesComponent } from '../personajes/personajes.component';
   templateUrl: './agregar.component.html'
 })
 export class AgregarComponent {
-  //@Input('nuevo') personajes: Personaje[] = [];
-  @Input() personajes: Personaje[] = [];
-  @Input() nuevo: Personaje = {
+  
+  @Input('characters') personajes: Personaje[] = [];
+  @Input('new_character') nuevo: Personaje = {
     nombre: '',
     poder: 0
   }
