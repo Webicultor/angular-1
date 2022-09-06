@@ -7,30 +7,25 @@ import { DbzService } from '../services/dbz.service';
   templateUrl: './main-page.component.html'
 })
 export class MainPageComponent {
-  
-  personajes: Personaje[] = [
-    {
-      nombre: "Goku",
-      poder: 15000
-    },
-    {
-      nombre: "Vegeta",
-      poder: 8500
-    }
-  ];
+
+  //personajes: Personaje[] = [];
 
   nuevo: Personaje = {
     nombre: 'Follet Tortuga',
     poder: 12000
   }
 
+  /* get personajes(): Personaje[] {
+    return this.dbzService.personajes;
+  }
+
   agregarNuevoPersonaje( argumento: Personaje ){
     //console.log( argumento )
-    this.personajes.push( argumento )
-  }
+    this.personajes.push( argumento );
+  } */
 
-  constructor( private dbzService: DbzService ){
-    
-  }
-
+  /* constructor( private dbzService: DbzService ){
+    //this.personajes = this.dbzService.personajes;
+  } */
+  constructor() {}
 }
